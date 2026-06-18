@@ -2,8 +2,8 @@
   "name": "chain",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
-    "test": "npm run test --prefix server && npm run test --prefix client"
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix project\"",
+    "test": "npm run test --prefix backend && npm run test --prefix project"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
