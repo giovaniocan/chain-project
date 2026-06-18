@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
       fetchCurrentTemp(),
       fetchLastYearAvg(lastYearDate),
     ]);
-    const diff = 6;
+    const diff = current - lastYearAvg;
     res.json({
       current,
       lastYearAvg,
